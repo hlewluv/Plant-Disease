@@ -10,16 +10,16 @@ def load_image(file_path):
     image = Image.open(file_path)
     return image
 
+def load_model(model_path):
+    model = tf.keras.models.load_model(model_path)
+    return model
+
 def display_image(image):
     root = tk.Tk()
     img = ImageTk.PhotoImage(image)
     panel = tk.Label(root, image=img)
     panel.pack(side="bottom", fill="both", expand="yes")
     root.mainloop()
-
-def load_model(model_path):
-    model = tf.keras.models.load_model(model_path)
-    return model
 
 def predict_image(model, image):
     image = image.resize((128, 128))
