@@ -21,7 +21,7 @@ def display_image(image):
     panel.pack(side="bottom", fill="both", expand="yes")
     root.mainloop()
 
-def predict_image(model, image):
+def predict_image(model, image): //Chỉnh ảnh upload để train máy
     image = image.resize((128, 128))
 
     if image.mode != 'RGB':
