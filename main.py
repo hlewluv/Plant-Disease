@@ -1,9 +1,10 @@
-import os
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import tensorflow as tf
 import numpy as np
+import os
+
 
 def load_image(file_path):
     image = Image.open(file_path)
