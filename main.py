@@ -6,13 +6,13 @@ import numpy as np
 import os
 
 
-def load_image(file_path):
-    image = Image.open(file_path)
-    return image
-
 def load_model(model_path):
     model = tf.keras.models.load_model(model_path)
     return model
+
+def load_image(file_path):
+    image = Image.open(file_path)
+    return image
 
 def display_image(image):
     root = tk.Tk()
