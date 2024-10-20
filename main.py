@@ -55,13 +55,10 @@ def main():
         file_path = filedialog.askopenfilename()
         if not file_path:
             break
-
         image = load_image(file_path)
         display_image(image)
-
         result_index = predict_image(model, image)
         print(f"Model is predicting it's a {class_name[result_index]}")
-
         user_input = input("Do you want to choose another image? (yes/no): ")
         if user_input.lower() != 'yes':
             break
