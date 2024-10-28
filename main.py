@@ -47,7 +47,6 @@ def main():
         'Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy',
         'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot',
         'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot',
-        'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot',
     ]
 
     while True:
